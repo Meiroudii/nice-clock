@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Nice Clock</title>
+	<link rel="icon" href="https://fav.farm/%E2%8F%B2%EF%B8%8F" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+	<main>
+	  <div class="clock">
+		<div class="clock-face">
+		  <div class="hand hours-hand"></div>
+		  <div class="hand minutes-hand"></div>
+		  <div class="hand seconds-hand"></div>
+		</div>
+	  </div>
+	</main>
+	<script src="{{ url_for('static', filename='js/clock.js') }}"></script>
+</body>
+</html>
